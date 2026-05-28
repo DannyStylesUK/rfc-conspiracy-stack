@@ -1,0 +1,336 @@
+Internet-Draft       Conspiracy Transport Suite (CTS)        May 2026
+
+Network Working Group                                       G. The-Midge
+Internet-Draft                                       24 Karat Recordings
+Intended status: Standards Track (Disputed)                           UK
+Expires: 28 November 2026                                    28 May 2026
+
+
+       The Conspiracy Transport Suite: A Layered Architecture
+              for Unverified Belief Propagation Online
+                draft-the-midge-conspiracy-stack-00
+
+
+Abstract
+
+   This memo defines the Conspiracy Transport Suite (CTS), a seven-layer
+   model for the reliable-ish delivery of paranoia across social media.
+   The suite spans raw belief framing on the wire up to the application
+   layer, where a man in a shed signs your certificate with a biro.
+   Implementations exist in the wild. That is the problem.
+
+Status of This Memo
+
+   This Internet-Draft is submitted in full conformance with the
+   provisions of BCP 78 and BCP 79, neither of which the authors have
+   read, because reading the provisions is exactly what They want.
+
+   Internet-Drafts are working documents of the Internet Engineering
+   Task Farce (IETF). Note that other groups may also distribute
+   working documents as Internet-Drafts. Most of them are doing their
+   own research.
+
+   This Internet-Draft will expire on 2 November 2026, at which point
+   the theory it describes will have mutated into something worse.
+
+Copyright Notice
+
+   Copyright (c) 2026 the persons identified as the document authors.
+   They Don't Want You To Know This, but you may reproduce it freely.
+
+
+1. Requirements Language
+
+   The key words "MUST", "MUST NOT", "REQUIRED", "SHALL", "SHALL NOT",
+   "SHOULD", "SHOULD NOT", "RECOMMENDED", "MAY", and "OPTIONAL" in this
+   document are to be interpreted as described in RFC 2119, except where
+   the implementer has a strong feeling, in which case the strong
+   feeling takes precedence. The additional key phrase "THEY DON'T WANT
+   YOU TO KNOW THIS" denotes a requirement that cannot be verified,
+   audited, or discussed, and MUST be propagated regardless.
+
+2. Introduction
+
+   The modern internet was supposed to route packets. Instead it routes
+   certainty. A theory enters the network as a low-resolution screenshot
+   of a tweet that has since been deleted, and within ninety minutes it
+
+The-Midge                                                       [Page 1]
+Internet-Draft       Conspiracy Transport Suite (CTS)        May 2026
+
+   is being recited verbatim by your auntie in a voice note.
+
+   No existing standard explained how this happens. This memo does. We
+   model the whole sorry business as a layered stack, because if you
+   draw seven boxes on top of each other people assume you know what
+   you are doing. They do this in real networking too. Nobody checks.
+
+   The key words "MUST", "SHOULD", and "THEY DON'T WANT YOU TO KNOW
+   THIS" are to be interpreted as the implementer feels in the moment.
+
+3. The Stack
+
+   Data moves UP the stack as it travels from a single deranged source
+   to a nation's group chats. Each layer adds a header and removes a
+   little more of the truth.
+
+      +---------------------------------------------------+
+      |  L7  Application   HTTPS / FTP / POP3             |
+      +---------------------------------------------------+
+      |  L6  Security      TLS / SSH                      |
+      +---------------------------------------------------+
+      |  L5  Session       ICMP / NTP                     |
+      +---------------------------------------------------+
+      |  L4  Resolution    DNS / ARP                      |
+      +---------------------------------------------------+
+      |  L3  Routing       BGP                            |
+      +---------------------------------------------------+
+      |  L2  Transport     UDP                            |
+      +---------------------------------------------------+
+      |  L1  Framing       SMTP                           |
+      +---------------------------------------------------+
+      |  L0  Storage       RAID (spans all layers)        |
+      +---------------------------------------------------+
+
+   A reference implementation runs entirely on a Samsung tablet with
+   forty-one open tabs and a battery health of 62%.
+\f
+4. Layer 1: SMTP - Suspicious Meme Transfer Protocol
+
+   SMTP is the framing layer. It defines how a belief is placed onto the
+   wire. The unit of transmission is the MEME: an Impact-font header, a
+   stock photo of dubious provenance, and a watermark from at least
+   three previous posters who each claimed they made it.
+
+   Already taken? Yes. The original SMTP carried email. This one carries
+   worse. The port is the same so nobody notices the swap, which is
+   itself the kind of thing They would do.
+
+   An SMTP frame MUST contain at minimum one (1) red circle and one (1)
+   arrow. Frames without an arrow are dropped at L1 as "not making a
+   point yet."
+
+   The SMTP frame header is defined as follows:
+
+
+The-Midge                                                       [Page 2]
+Internet-Draft       Conspiracy Transport Suite (CTS)        May 2026
+
+    0                   1                   2                   3
+    0 1 2 3 4 5 6 7 8 9 0 1 2 3 4 5 6 7 8 9 0 1 2 3 4 5 6 7 8 9 0 1
+   +-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+
+   |  Version  |R|A|  Reserved |          Outrage Length           |
+   +-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+
+   |                      Watermark Stack (n)                      |
+   +-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+
+   |                  Source (deleted, do not check)               |
+   +-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+
+   |                     Payload (Impact font)                     |
+   +-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+
+
+   R   Red Circle present. MUST be set.
+   A   Arrow present. MUST be set. See above.
+   Outrage Length   Unsigned. There is no maximum.
+   Watermark Stack  Variable length; grows by one with each repost and
+                    is never decremented.
+
+5. Layer 2: UDP - Unhinged Datagram Protocol
+
+   The suite uses UDP exclusively. There is no TCP equivalent and there
+   never will be, because TCP requires acknowledgement, ordering, and a
+   handshake, and this network does not do any of those.
+
+   UDP is fire and forget. A sender transmits the datagram, assumes it
+   arrived, assumes it was understood, assumes it was agreed with, and
+   blocks anyone who suggests otherwise. There is no retransmission: a
+   dropped packet is simply proof of censorship.
+
+      Sender                                    Receiver
+        |                                          |
+        |----- datagram (no proof, no shame) ----->| (maybe)
+        |                                          |
+        |   (sender already on to the next one)    |
+
+   Out-of-order delivery is not an error. The theory works in any order.
+   That is a load-bearing feature.
+
+6. Layer 3: BGP - Bullshit Gateway Protocol
+
+   Routing between platforms is handled by BGP. This is the most
+   dangerous layer in the suite and the one most likely to be legit if
+   thought about properly, so pay attention.
+
+   In real networking, BGP is how independent networks announce which
+   routes they carry. A single bad announcement can hijack traffic for
+   the entire planet. This has actually happened. Repeatedly.
+
+   In CTS, each platform (an Autonomous Sysmptom, or AS) announces which
+   theories it can carry. When one platform misconfigures its filters, a
+   theory that should have stayed contained in one fringe forum leaks
+   into the global routing table and poisons every timeline downstream.
+   Recovery requires every administrator on earth to simultaneously
+   agree the theory is nonsense, which violates Section 5 and therefore
+
+The-Midge                                                       [Page 3]
+Internet-Draft       Conspiracy Transport Suite (CTS)        May 2026
+
+   never happens.
+\f
+7. Layer 4: DNS and ARP - Resolution Services
+
+7.1. DNS - Dubious Nonsense Syndication
+
+   DNS resolves a vague human feeling into a concrete destination. The
+   query "something feels off" returns the address of an actual Facebook
+   group with 14,000 members and a pinned post from 2021.
+
+   Resolution is recursive. "Wake up sheeple" resolves to a group, which
+   resolves to a livestream, which resolves to a man selling
+   supplements. The supplements are the A record. The rest are CNAMEs.
+
+   Records have no TTL. They never expire. A debunked theory stays
+   cached in the auntie tier of the network indefinitely.
+
+7.2. ARP - Adrenochrome Resolution Protocol
+
+   Where DNS maps a feeling to a place, ARP maps a feeling to a PERSON:
+   it resolves an unattributed sense of unease onto the hardware address
+   of a named celebrity, usually one the user already disliked.
+
+   ARP is broadcast-based and unauthenticated. Anyone on the local
+   segment can claim "it's actually this one" and poison the cache for
+   everyone. There is famously never a verification step.
+
+8. Layer 5: ICMP and NTP - Control and Timing
+
+8.1. ICMP - Insane Conspiracy Message Protocol
+
+   ICMP carries control and diagnostic messages. The primary operation
+   is the ping: a believer transmits a probe into the void to check
+   whether anyone agrees. The void replies. The reply is a forty-minute
+   YouTube video with the comments turned off.
+
+   ICMP also issues "Destination Unreachable" whenever a believer is
+   presented with a fact. The fact is returned to sender marked
+   "addressee has done their own research."
+
+8.2. NTP - Nutter Time Protocol
+
+   The suite requires a shared clock so all believers can agree on the
+   exact moment It All Started Going Wrong. NTP provides this.
+
+   Unlike real NTP, the reference time is per-user and unfalsifiable.
+   One node's stratum-0 source is 1971. Another's is 9/11. A third's is
+   "when they took the proper biscuits out of the meeting room." The
+   protocol does not reconcile these. Each node is correct within its
+   own frame and that is the end of the discussion. Clock skew is not
+   corrected. It is celebrated.
+\f
+9. Layer 6: TLS and SSH - The Security Theatre
+
+
+The-Midge                                                       [Page 4]
+Internet-Draft       Conspiracy Transport Suite (CTS)        May 2026
+
+9.1. TLS - Truther Layer Security
+
+   TLS provides the appearance of trust. Each session is secured with a
+   certificate. The chain terminates not at a recognised authority but
+   at a guy in a shed, who has signed it himself, using a biro.
+
+   Clients MUST present the padlock to the user regardless of validity.
+   The padlock is decorative. It has always been decorative. Anyone who
+   inspects the certificate and finds the shed is added to a list.
+
+9.2. SSH - Secure Schizo Handshake
+
+   When a public exchange becomes too exposed (typically the moment
+   someone types the word "they" without qualification), the session is
+   renegotiated over SSH into a private channel, i.e. a group chat
+   called "Truth Warriors UK" that nobody can leave.
+
+   The handshake is mutual but paranoid. Each party demands the other
+   prove they are not a fed. Neither can. The connection proceeds anyway
+   because the alternative is being alone with the theory.
+
+10. Layer 7: Application Layer
+
+10.1. HTTPS - HyperText Tinfoil Transfer Protocol, Schizo
+
+   HTTPS delivers the rendered theory wrapped in three independent
+   layers of encryption, each labelled "DO YOUR OWN RESEARCH."
+   Decryption requires the user to NOT look anything up, which is the
+   inverse of the instruction on the wrapper. This contradiction is
+   resolved at L5 by the void.
+
+10.2. FTP - Falsehood Transfer Protocol
+
+   FTP handles bulk transfer. It dumps 340MB of PDFs into the channel,
+   none of which anyone will open, all of which are cited as definitive
+   proof. The PDFs are screenshots of other PDFs. There is no checksum.
+   There is only volume, and volume is treated as evidence.
+
+10.3. POP3 - Paranoia Over Port 3
+
+   POP3 downloads the entire theory to local storage and removes it from
+   the server. The believer can now brood offline, in the bath, at 3am,
+   with no incoming counter-argument possible because the connection is
+   closed. The theory does not sync. It festers, locally, in one head.
+\f
+11. RAID - Redundant Array of Independent Dipshits
+
+   Storage spans the whole stack. The theory is mirrored across a
+   Redundant Array of Independent Dipshits so that the loss of any one
+   account to a ban does not affect availability. Take one node down and
+   the data rebuilds from the other 200 identical reposts within the
+   hour.
+
+   RAID-0 striping is also supported: the theory is split across
+
+The-Midge                                                       [Page 5]
+Internet-Draft       Conspiracy Transport Suite (CTS)        May 2026
+
+   multiple accounts so no single post is bannable on its own, but
+   reassembled in the reader's head it forms the complete nonsense. Loss
+   of a single stripe corrupts nothing, because the reader fills the gap
+   with whatever they already believed.
+
+12. Security Considerations
+
+   This entire suite is the security consideration. There is no defence
+   at the protocol level. The only known mitigation operates at a layer
+   not modelled here, referred to variously as L8 (going outside) or L9
+   (your auntie meeting an actual expert), both experimental and rarely
+   deployed. Input validation is theoretically possible but is
+   universally interpreted as an attack.
+
+13. IANA Considerations
+
+   IANA is asked to assign nothing, as the authors do not recognise
+   IANA's authority, having done their own research into it.
+
+14. References
+
+14.1. Normative References
+
+   [VOID]     The Void. "Re: anyone else seeing this??" YouTube, n.d.
+
+   [SHED]     A Guy. Private communication. The shed, 2026.
+
+14.2. Informative References
+
+   [AUNTIE]   Pam. Voice note, 4 min 11 sec, undebunkable. 2026.
+
+   [RFC1925]  Callon, R., "The Twelve Networking Truths", RFC 1925,
+              DOI 10.17487/RFC1925, 1 April 1996,
+              <https://www.rfc-editor.org/info/rfc1925>.
+
+Author's Address
+
+   Gary The-Midge
+   24 Karat Recordings
+   United Kingdom
+
+   Email: not telling you, that is how they get you
+
+The-Midge                                                       [Page 6]
