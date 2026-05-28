@@ -30,7 +30,7 @@ Status of This Memo
    working documents as Internet-Drafts. Most of them are doing their
    own research.
 
-   This Internet-Draft will expire on 2 November 2026, at which point
+   This Internet-Draft will expire: 28 November 2026, at which point
    the theory it describes will have mutated into something worse.
 
 Copyright Notice
