@@ -94,7 +94,7 @@ Internet-Draft       Conspiracy Transport Suite (CTS)        May 2026
 
    A reference implementation runs entirely on a Samsung tablet with
    forty-one open tabs and a battery health of 62%.
-\f
+
 4. Layer 1: SMTP - Suspicious Meme Transfer Protocol
 
    SMTP is the framing layer. It defines how a belief is placed onto the
@@ -189,7 +189,7 @@ Internet-Draft       Conspiracy Transport Suite (CTS)        May 2026
    supplements. The supplements are the A record. The rest are CNAMEs.
 
    Records have no TTL. They never expire. A debunked theory stays
-   cached in the auntie tier of the network indefinitely.
+   cached in the auntie/uncle tier of the network indefinitely.
 
 7.2. ARP - Adrenochrome Resolution Protocol
 
@@ -206,7 +206,7 @@ Internet-Draft       Conspiracy Transport Suite (CTS)        May 2026
 8.1. ICMP - Insane Conspiracy Message Protocol
 
    ICMP carries control and diagnostic messages. The primary operation
-   is the ping: a believer transmits a probe into the void to check
+   is the ping: A believer transmits a probe into the void to check
    whether anyone agrees. The void replies. The reply is a forty-minute
    YouTube video with the comments turned off.
 
@@ -214,14 +214,14 @@ Internet-Draft       Conspiracy Transport Suite (CTS)        May 2026
    presented with a fact. The fact is returned to sender marked
    "addressee has done their own research."
 
-8.2. NTP - Nutter Time Protocol
+8.2. NTP - Nutter Time Protocol/Nutjob Time Protocol
 
    The suite requires a shared clock so all believers can agree on the
    exact moment It All Started Going Wrong. NTP provides this.
 
    Unlike real NTP, the reference time is per-user and unfalsifiable.
    One node's stratum-0 source is 1971. Another's is 9/11. A third's is
-   "when they took the proper biscuits out of the meeting room." The
+   "when they took the expensive biscuits out of the meeting room." The
    protocol does not reconcile these. Each node is correct within its
    own frame and that is the end of the discussion. Clock skew is not
    corrected. It is celebrated.
@@ -247,11 +247,12 @@ Internet-Draft       Conspiracy Transport Suite (CTS)        May 2026
    When a public exchange becomes too exposed (typically the moment
    someone types the word "they" without qualification), the session is
    renegotiated over SSH into a private channel, i.e. a group chat
-   called "Truth Warriors UK" that nobody can leave.
+   called "Truth Warriors" that nobody can leave.
 
    The handshake is mutual but paranoid. Each party demands the other
-   prove they are not a fed. Neither can. The connection proceeds anyway
-   because the alternative is being alone with the theory.
+   prove they are not a "law enforcement". Neither can. The connection
+   proceeds anyway because the alternative is being alone with the 
+   theory.
 
 10. Layer 7: Application Layer
 
@@ -276,7 +277,7 @@ Internet-Draft       Conspiracy Transport Suite (CTS)        May 2026
    the server. The believer can now brood offline, in the bath, at 3am,
    with no incoming counter-argument possible because the connection is
    closed. The theory does not sync. It festers, locally, in one head.
-\f
+
 11. RAID - Redundant Array of Independent Dipshits
 
    Storage spans the whole stack. The theory is mirrored across a
@@ -300,7 +301,7 @@ Internet-Draft       Conspiracy Transport Suite (CTS)        May 2026
    This entire suite is the security consideration. There is no defence
    at the protocol level. The only known mitigation operates at a layer
    not modelled here, referred to variously as L8 (going outside) or L9
-   (your auntie meeting an actual expert), both experimental and rarely
+   (your Auntie meeting an actual expert), both experimental and rarely
    deployed. Input validation is theoretically possible but is
    universally interpreted as an attack.
 
