@@ -3,7 +3,7 @@ Internet-Draft       Conspiracy Transport Suite (CTS)        May 2026
 Network Working Group                                       G. The-Midge
 Internet-Draft                                       24 Karat Recordings
 Intended status: Standards Track (Disputed)                           UK
-Expires: 28 November 2026                                    28 May 2026
+Expires: 28 November 2026                                   28 May 2026
 
 
        The Conspiracy Transport Suite: A Layered Architecture
@@ -30,7 +30,7 @@ Status of This Memo
    working documents as Internet-Drafts. Most of them are doing their
    own research.
 
-   This Internet-Draft will expire: 28 November 2026, at which point
+   This Internet-Draft will expire on 28 November 2026, at which point
    the theory it describes will have mutated into something worse.
 
 Copyright Notice
@@ -94,7 +94,6 @@ Internet-Draft       Conspiracy Transport Suite (CTS)        May 2026
 
    A reference implementation runs entirely on a Samsung tablet with
    forty-one open tabs and a battery health of 62%.
-
 4. Layer 1: SMTP - Suspicious Meme Transfer Protocol
 
    SMTP is the framing layer. It defines how a belief is placed onto the
@@ -112,11 +111,11 @@ Internet-Draft       Conspiracy Transport Suite (CTS)        May 2026
 
    The SMTP frame header is defined as follows:
 
+    0                   1                   2                   3
 
 The-Midge                                                       [Page 2]
 Internet-Draft       Conspiracy Transport Suite (CTS)        May 2026
 
-    0                   1                   2                   3
     0 1 2 3 4 5 6 7 8 9 0 1 2 3 4 5 6 7 8 9 0 1 2 3 4 5 6 7 8 9 0 1
    +-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+
    |  Version  |R|A|  Reserved |          Outrage Length           |
@@ -170,12 +169,12 @@ Internet-Draft       Conspiracy Transport Suite (CTS)        May 2026
    into the global routing table and poisons every timeline downstream.
    Recovery requires every administrator on earth to simultaneously
    agree the theory is nonsense, which violates Section 5 and therefore
+   never happens.
 
 The-Midge                                                       [Page 3]
 Internet-Draft       Conspiracy Transport Suite (CTS)        May 2026
 
-   never happens.
-\f
+
 7. Layer 4: DNS and ARP - Resolution Services
 
 7.1. DNS - Dubious Nonsense Syndication
@@ -206,7 +205,7 @@ Internet-Draft       Conspiracy Transport Suite (CTS)        May 2026
 8.1. ICMP - Insane Conspiracy Message Protocol
 
    ICMP carries control and diagnostic messages. The primary operation
-   is the ping: A believer transmits a probe into the void to check
+   is the ping: a believer transmits a probe into the void to check
    whether anyone agrees. The void replies. The reply is a forty-minute
    YouTube video with the comments turned off.
 
@@ -225,14 +224,14 @@ Internet-Draft       Conspiracy Transport Suite (CTS)        May 2026
    protocol does not reconcile these. Each node is correct within its
    own frame and that is the end of the discussion. Clock skew is not
    corrected. It is celebrated.
-\f
+
 9. Layer 6: TLS and SSH - The Security Theatre
 
+9.1. TLS - Truther Layer Security
 
 The-Midge                                                       [Page 4]
 Internet-Draft       Conspiracy Transport Suite (CTS)        May 2026
 
-9.1. TLS - Truther Layer Security
 
    TLS provides the appearance of trust. Each session is secured with a
    certificate. The chain terminates not at a recognised authority but
@@ -250,8 +249,8 @@ Internet-Draft       Conspiracy Transport Suite (CTS)        May 2026
    called "Truth Warriors" that nobody can leave.
 
    The handshake is mutual but paranoid. Each party demands the other
-   prove they are not a "law enforcement". Neither can. The connection
-   proceeds anyway because the alternative is being alone with the 
+   prove they are not "law enforcement". Neither can. The connection
+   proceeds anyway, because the alternative is being alone with the
    theory.
 
 10. Layer 7: Application Layer
@@ -277,7 +276,6 @@ Internet-Draft       Conspiracy Transport Suite (CTS)        May 2026
    the server. The believer can now brood offline, in the bath, at 3am,
    with no incoming counter-argument possible because the connection is
    closed. The theory does not sync. It festers, locally, in one head.
-
 11. RAID - Redundant Array of Independent Dipshits
 
    Storage spans the whole stack. The theory is mirrored across a
@@ -287,11 +285,11 @@ Internet-Draft       Conspiracy Transport Suite (CTS)        May 2026
    hour.
 
    RAID-0 striping is also supported: the theory is split across
+   multiple accounts so no single post is bannable on its own, but
 
 The-Midge                                                       [Page 5]
 Internet-Draft       Conspiracy Transport Suite (CTS)        May 2026
 
-   multiple accounts so no single post is bannable on its own, but
    reassembled in the reader's head it forms the complete nonsense. Loss
    of a single stripe corrupts nothing, because the reader fills the gap
    with whatever they already believed.
